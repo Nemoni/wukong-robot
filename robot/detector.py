@@ -1,3 +1,4 @@
+import os
 import time
 
 from snowboy import snowboydecoder
@@ -29,6 +30,7 @@ def initDetector(wukong):
                 access_key=access_key,
                 keyword_paths=[constants.getConfigData(kw) for kw in keyword_paths],
                 sensitivities=[config.get("sensitivity", 0.5)] * len(keyword_paths),
+                model_path=os.path.join(constants.CONFIG_PATH, 'porcupine_params_zh.pv')
             )
         else:
             porcupine = pvporcupine.create(
