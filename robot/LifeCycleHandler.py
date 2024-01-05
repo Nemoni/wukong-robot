@@ -156,7 +156,7 @@ class LifeCycleHandler(object):
             self._wakeup.clear()
 
     def _beep_hi(self, onCompleted=None):
-        Player.play(constants.getData("beep_hi.wav"), onCompleted)
+        Player.play(constants.getData("dai.wav"), onCompleted)
 
     def _beep_lo(self):
         Player.play(constants.getData("beep_lo.wav"))
