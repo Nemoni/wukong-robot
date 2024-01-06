@@ -146,6 +146,12 @@ ali_yuyin:
     token: 'YOUR_TOKEN'
     voice: 'xiaogang' #xiaoyun为女生，xiaogang为男生, 全部可选：http://suo.im/4x8RzQ
 
+# 微软Azure
+azure_yuyin:
+    secret_key: 'YOUR_SECRET_KEY'
+    region: 'REGION'
+    voice: 'zh-CN-sichuan-YunxiNeural' #
+
 # 腾讯云语音
 # 先前往 https://cloud.tencent.com
 # 注册语音识别和语音合成服务，获得 appid ，然后在访问管理
